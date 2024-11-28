@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Berbalik Nilai Kelas 7</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4a90e2, #003366);
+            padding: 1rem 0;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffdd57;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .home {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: hsl(0, 0%, 100%); /* Warna teks putih */
+            text-align: center; /* Teks di tengah */
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+        }
+        footer {
+            display: flex;
+            color: rgb(255, 255, 255); /* Warna teks putih */
+            justify-content: center;
+            align-items: center;
+        }
+        footer p {
+            color: white !important;
+        }
+
+
+        .background-image {
+            width: 50%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin-top: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #4a90e2;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .burger.toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .burger.toggle .line2 {
+                opacity: 0;
+            }
+
+            .burger.toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+
+        /* Gaya tambahan untuk bagian materi Perbandingan Berbalik Nilai */
+        .content-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .formula {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Perbandingan Berbalik Nilai Kelas 7</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="materi.html"><i class="fas fa-book"></i> Materi</a></li>
+                <li><a href="contoh1.html"><i class="fas fa-pencil-alt"></i> Contoh Soal</a></li>
+                <li><a href="latihan1.html"><i class="fas fa-edit"></i> Latihan</a></li>
+                <li><a href="kuis1.html"><i class="fas fa-question-circle"></i> Kuis</a></li>
+                <li><a href="kontak1.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Container 1: Pendahuluan -->
+        <div class="content-container">
+            <h1>Materi Perbandingan Berbalik Nilai Kelas 7</h1>
+            <img src="FOTO.jpg" alt="Materi Perbandingan Berbalik Nilai Kelas 7"> 
+        </div>
+
+        <!-- Container 2: Pengertian Perbandingan Berbalik Nilai -->
+        <div class="content-container">
+            <h1>Pendahuluan</h1>
+            <p>Perbandingan berbalik nilai merupakan salah satu konsep penting dalam matematika yang sering kita jumpai dalam kehidupan sehari-hari. Konsep ini menggambarkan hubungan antara dua variabel yang saling mempengaruhi secara terbalik, di mana peningkatan pada satu variabel akan menyebabkan penurunan proporsional pada variabel lainnya.</p>
+            <h2>Definisi Perbandingan Berbalik Nilai</h2>
+            <p>Perbandingan berbalik nilai, juga dikenal sebagai proporsi terbalik atau inverse proportion, adalah hubungan matematis antara dua variabel di mana peningkatan satu variabel menyebabkan penurunan proporsional pada variabel lainnya, sehingga hasil kali kedua variabel tersebut selalu konstan.</p>
+        </div>
+
+        <!-- Container 3: Rumus Perbandingan Berbalik Nilai -->
+        <div class="content-container">
+            <h2>Rumus Dasar Perbandingan Berbalik Nilai</h2>
+            <p>Untuk menghitung perbandingan berbalik senilai, kita dapat menggunakan rumus berikut:</p>
+            <div class="formula">
+                <img src="RUMUS.jpg" alt="Rumus Perbandingan Berbalik Nilai Kelas 7"> 
+
+        <!-- Container 4: Contoh Aplikasi dalam Kehidupan Sehari-hari -->
+        <div class="content-container">
+            <h2>Konsep Contoh Aplikasi dalam Kehidupan Sehari-hari</h2>
+            <p><strong>a. Kecepatan dan Waktu Tempuh
+                Semakin tinggi kecepatan kendaraan, semakin singkat waktu yang dibutuhkan untuk menempuh jarak tertentu.</p>
+            <p>b. Jumlah Pekerja dan Waktu Penyelesaian
+                Semakin banyak pekerja, semakin sedikit waktu yang dibutuhkan untuk menyelesaikan suatu pekerjaan.</p>
+            <P>c. Tekanan dan Volume Gas (Hukum Boyle)
+                 Pada suhu konstan, tekanan gas berbanding terbalik dengan volumenya.</P>
+            <P>d. Intensitas Cahaya dan Jarak dari Sumber
+                Intensitas cahaya berbanding terbalik dengan kuadrat jarak dari sumbernya.</P>
+            <P>e. Tegangan dan Arus Listrik (pada resistansi konstan)
+                Berdasarkan Hukum Ohm, jika resistansi tetap, peningkatan tegangan akan menyebabkan penurunan arus listrik secara proporsional.</P>
+        </div>
+
+        <!-- Container 4: Konsep Ruang Sampel -->
+        <div class="content-container">
+            <h2>Modul Ajar</h2>
+            <p>Untuk memahami materi tentang Perbandingan Berbalik Nilai secara lebih mendalam, mari kita simak modul ajar yang telah disiapkan di bawah ini. Modul ini akan membantu Anda memahami konsep-konsep penting dan memberikan panduan yang jelas untuk setiap bagian materi. Berikut adalah Modul Ajar mengenai materi Perbandingan Berbalik Nilai:</p>
+            <iframe src="https://drive.google.com/file/d/19WK7Txax2Hs_Lua-SkwghvQWGlB4AeXI/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+
+        <!-- Container 6: Video Pembelajaran -->
+        <div class="content-container">
+            <h2>Video Pembelajaran</h2>
+            <p>Untuk membantu memperdalam pemahaman Anda tentang materi Perbandingan Berbalik Nilai, saya telah menyiapkan video pembelajaran yang akan menjelaskan konsep-konsep penting secara lebih detail. Silakan tonton video di bawah ini, dan jangan ragu untuk mengulangi atau menjeda video jika diperlukan agar Anda dapat memahami setiap bagian dengan lebih baik. Berikut adalah video pembelajaran mengenai materi perbandingan berbalik nilai:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UkToSBuquHc?si=aVClVu-MAEjREelf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Container 7: Kesimpulan -->
+        <div class="content-container">
+            <h2>Kesimpulan</h2>
+            <p>Perbandingan berbalik nilai merupakan konsep matematika yang fundamental dengan aplikasi luas dalam kehidupan sehari-hari dan berbagai bidang ilmu. Pemahaman yang baik tentang konsep ini dapat meningkatkan kemampuan analitis dan pemecahan masalah.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Materi Perbandingan Berbalik Nilai Kelas 7. Khairunisa-Srdn.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+
+            navLinks.addEventListener('click', (event) => {
+                if (event.target.tagName === 'A') {
+                    navLinks.classList.remove('active');
+                    burger.classList.remove('toggle');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
